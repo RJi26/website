@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topnav {
+  background-color: #143c6a; /* Update the background color */
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.topnav button a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.topnav button a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value as needed */
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.topnav button a:hover:before,
+.topnav button a.active:before {
+  width: 100%;
+}
+
+.topnav button a.active {
+  text-decoration: none;
+  position: relative; /* Ensure the active button's z-index is higher */
+}
+
+.topnav button a.active:before {
+  width: 100%; /* Ensure the underline is fully visible for the active button */
+}
+
+.topnav button a.active:hover {
+  text-decoration: none;
+}
