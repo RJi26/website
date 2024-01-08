@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>Richard Ji</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+        <meta content="NA" name="keywords">
+        <meta content="NA" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.png" rel="icon">
+        <link href="assets/img/favicon.png" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,13 +22,18 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Javascript -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        
+
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">DevFolio</a>
+                <a href="index.html" class="navbar-brand">糖分</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,14 +41,17 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">PankVision</a>
+                        <a href="#projects" class="nav-item nav-link active">Projects</a>
+                        <!-- <a href="#about" class="nav-item nav-link">PankVision</a> -->
+                        <!-- <a href="#project2" class="nav-item nav-link">NeuroSentry</a> -->
+                        <!-- <a href="#portfolio" class="nav-item nav-link">Portfolio</a> -->
+                        <a href="#skills" class="nav-item nav-link">Skills</a>
                         <!-- <a href="#service" class="nav-item nav-link">Service</a> -->
                         <!-- <a href="#experience" class="nav-item nav-link">Experience</a> -->
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                         <!-- <a href="#price" class="nav-item nav-link">Price</a> -->
                         <!-- <a href="#review" class="nav-item nav-link">Review</a> -->
                         <!-- <a href="#team" class="nav-item nav-link">Team</a> -->
-                        <a href="#blog" class="n av-item nav-link">Blog</a>
+                        <!-- <a href="#blog" class="n av-item nav-link">Blog</a> -->
                         <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
                     </div>
                 </div>
@@ -60,29 +68,48 @@
                         <div class="hero-content">
                             <div class="hero-text">
                                 <p>HI! I'm</p>
-                                <h1>Richard Jsi</h1>
+                                <h1>Richard Ji</h1>
                                 <h2></h2>
-                                <div class="typed-text">AI Researcher, Student, Web Developer, Discord Bot Developer</div>
+                                <div class="typed-text">AI Researcher, Student, Scientist</div>
                             </div>
                             <div class="hero-btn">
-                                <a class="btn" href="">PankVision 3D</a>
-                                <a class="btn" href="">Contact Me</a>
+                                <a class="btn" href="">Mind Your</a>
+                                <a class="btn" href="">Sugar Levels!</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
+                        <div class="hero-image-container">
+                            <img src="assets/img/hero.png" alt="Hero Image" class="hero-image">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Hero End -->
-
-
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        
+        <div class="projects-list" id="projects" data-aos="fade-in">
+            <div class="projects-text">
+                <p>
+                    RECENT PROJECTS
+                </p>
+            </div>
+            <hr class="custom-divider">
+            <button href="https://github.com/RJi26/PankVision-3D" class="full-width-button">
+                <span class="project-title">PankVision</span>
+                <span class="small-text">MONAI 3D CNNs</span>
+            </button>
+            <hr class="custom-divider">
+            <button href="" class="full-width-button">
+                <span class="project-title">NeuroSentry</span>
+                <span class="small-text">Torch nnUNet 3D</span>
+            </button>
+            <hr class="custom-divider">
+        </div>
+        
+         <!-- Pankvision (About) Start -->
+         <!--
+         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -93,7 +120,7 @@
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-left">
-                                <p>Cancer Treatment Using AI</p>
+                                <p>Pancreas tracking for radiotherapeutic procedures</p>
                                 <h2>PankVision 3D</h2>
                             </div>
                             <div class="about-text">
@@ -113,7 +140,43 @@
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        -->
+        <!-- Pankvision (About) End -->
+
+        <!-- Neurosentry Start -->
+        <!--
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="project2">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="" alt="Image"> 
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header text-left">
+                                <p>nnUNet powered brain tumour segmentation model</p>
+                                <h2>NeuroSentry</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    The development of an automated brain tumor segmentation model is motivated by the critical necessity to improve the diagnosis and treatment of brain cancer, a formidable disease with a five-year survival rate that remains relatively low. Despite advancements in medical science, the mortality rate has seen limited improvement over the last four decades, primarily due to the complexities associated with early detection.
+                                </p>
+                                <p>
+
+                                </p>
+                                <p>
+                                    An automated brain tumor segmentation model can revolutionize early detection by precisely identifying and segmenting tumors in medical imaging. This not only streamlines healthcare workflows but also improves the chances of early intervention. Additionally, it aids in surgical planning by providing accurate measurements and tumor locations. The integration of artificial intelligence in this context promises significant advancements in combating brain cancer.                                </p>
+                            </div>
+                            <a class="btn" href="https://github.com/RJi26/NeuroSentry">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- Neurosentry End -->
         
         
         <!-- Service Start --> 
@@ -290,6 +353,7 @@
         
         
         <!-- Banner Start -->
+        <!--
         <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
@@ -304,10 +368,12 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- Banner End -->
 
 
         <!-- Portfolio Start -->
+        <!--
         <div class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -394,10 +460,12 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- Portfolio End -->
         
         
         <!-- Banner Start -->
+        <!--
         <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
@@ -412,6 +480,7 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- Banner End -->
         
         
@@ -704,6 +773,7 @@
 
 
         <!-- Blog Start -->
+        <!--
         <div class="blog" id="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -754,8 +824,37 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- Blog End -->
 
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="skills">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <!-- <p>text</p> -->
+                <h2>I have experience with</h2>
+            </div class="skills-about">
+                <img src="assets/skills_img/python.png" alt="python_img" class="skills-image">
+                <img src="assets/skills_img/html.png" alt="html_img" class="skills-image">
+                <img src="assets/skills_img/css.png" alt="css_img" class="skills-image">
+                <img src="assets/skills_img/js.png" alt="js_img" class="skills-image">
+                <img src="assets/skills_img/jupyter.png" alt="jupyter_img" class="skills-image">
+                <img src="assets/skills_img/colab.png" alt="colab_img" class="skills-image">
+                <img src="assets/skills_img/vscode.png" alt="vscode_img" class="skills-image">
+                <img src="assets/skills_img/github.png" alt="github_img" class="skills-image">
+                <img src="assets/skills_img/ubuntu.png" alt="ubuntu_img" class="skills-image">
+                <img src="assets/skills_img/pytorch.png" alt="pytorch_img" class="skills-image">
+                <img src="assets/skills_img/tensorflow.png" alt="tensorflow_img" class="skills-image">
+                <img src="assets/skills_img/latex.png" alt="latex_img" class="skills-image">
+                <img src="assets/skills_img/linux.png" alt="linux_img" class="skills-image">
+                <img src="assets/skills_img/anaconda.png" alt="anaconda_img" class="skills-image">
+                <img src="assets/skills_img/paperspace.png" alt="paperspace_img" class="skills-image">
+                <img src="assets/skills_img/lua.png" alt="lua_img" class="skills-image">
+                <img src="assets/skills_img/nvim.png" alt="nvim_img" class="skills-image">
+                <img src="assets/skills_img/sql.png" alt="sql_img" class="skills-image">
+            </div>
+        </div>
+        <!-- Portfolio End -->
 
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -763,10 +862,10 @@
                 <div class="container">
                     <div class="footer-info">
                         <h2>Richard Ji</h2>
-                        <h3>Paradis Island, AOT</h3>
+                        <h3>Address Unavailable</h3>
                         <div class="footer-menu">
-                            <p>+no number rn</p>
-                            <p>taki.tachibana@yournameisgoated.com</p>
+                            <p>Number Unavailable</p>
+                            <p>Email Unavailable</p>
                         </div>
                         <div class="footer-social">
                             <a href=""><i class="fab fa-twitter"></i></a>
@@ -805,6 +904,7 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
