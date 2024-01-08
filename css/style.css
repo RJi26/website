@@ -390,6 +390,24 @@ a:focus {
     }
 }
 
+.hero-image-container {
+    width: 375px;
+    height: 375px;
+    overflow: hidden; 
+    border-radius: 50%;
+    position: relative;
+    margin: 10%;
+}
+
+.hero-image {
+    width: 127%;
+    height: 127%;
+    display: block;
+    object-fit: cover; /* Ensures the entire image is visible */
+    object-position:63% -10px;
+    position: absolute;
+}
+
 @media (max-width: 575.98px) {
     .hero .hero-text p {
         font-size: 16px;
@@ -467,6 +485,75 @@ a:focus {
     }
 }
 
+/*******************************/
+/********** Projects-list CSS **********/
+/*******************************/
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.projects-list {
+    padding: 20px; /* Existing padding */
+    padding-right: 100px; /* Add left padding to move text to the left */
+    animation: fadeIn ease 3s; /* Adjust the timing as needed */
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+.projects-text {
+    text-align: left; /* Align the text to the right */
+    font-size: 14px;
+    margin-left: 15.5%;
+
+}
+
+.project-title {
+    margin-left: 15.5%;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.full-width-button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 10px 0; /* Adjust padding as needed */
+    font-size: 50px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Separate the two spans */
+    text-decoration: none;
+    transition: color 0.7s; /* Add a transition for a smooth color change */
+}
+
+.full-width-button:hover {
+    color: #898686; /* Change to the desired lighter color */
+}
+
+.small-text {
+    font-size: 16px;
+    float: right;
+    margin-right: 16%;
+}
+
+.custom-divider {
+    border-top: 1px solid #ccc; /* Customize the color and thickness of the line */
+    margin: 40px 0; /* Add margin for spacing */
+    margin-left: 10%;
+}
+
+.full-width-button:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
 
 /*******************************/
 /********** About CSS **********/
@@ -474,7 +561,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
+    margin: 65px 0 65px 0;
 }
 
 .about .col-lg-6 {
@@ -532,7 +619,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 0px;
-    background: #EF233C;
+    background: #ef233c;
     border-radius: 10px;
     transition: 2s;
 }
@@ -1466,7 +1553,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: #444242e4;
 }
 
 .footer .container-fluid {
@@ -1590,3 +1677,29 @@ a:focus {
         padding: 0 5px;
     }
 }
+
+
+/*******************************/
+/*********** Skills CSS **********/
+/*******************************/
+
+.skills-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-image {
+    width: 50px; /* Set the width of your icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 30px; /* Adjust the margin as needed */
+}
+
+
+
+
+
+
+
+
+
