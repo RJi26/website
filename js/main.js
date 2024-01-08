@@ -1,5 +1,8 @@
 (function ($) {
     "use strict";
+
+    // initiate Animate On Scroll
+    AOS.init();
     
     // loader
     var loader = function () {
